@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @HuzaifaChaudary.
 - 👀 I’m interested in Changing World.
-- 🌱 I’m a Full Stack Web Application and Data Scientist to be.
+- 🌱 I’m a Full Stack Web And App Developer and Data Scientist to be.
 - 💞️ I’m looking to collaborate on Open Source Codes
 - 📫 Reach me by simply collaborating in github works and repo for github users only once a month.
 
