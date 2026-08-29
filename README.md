@@ -10,7 +10,7 @@
 
 <a href="https://github.com/HuzaifaChaudary?tab=followers"><img src="https://img.shields.io/github/followers/HuzaifaChaudary?label=Followers&style=for-the-badge&color=0f2027&labelColor=1a1b27" alt="Followers" /></a>
 <img src="https://komarev.com/ghpvc/?username=HuzaifaChaudary&label=Profile+Views&style=for-the-badge&color=0f2027" alt="Profile views" />
-<a href="mailto:fahad@pm-axsus.com"><img src="https://img.shields.io/badge/Email-Reach%20out-0f2027?style=for-the-badge&logo=gmail&logoColor=white&labelColor=1a1b27" alt="Email" /></a>
+<a href="mailto:chhuzaifaiftikhar@gmail.com"><img src="https://img.shields.io/badge/Email-Reach%20out-0f2027?style=for-the-badge&logo=gmail&logoColor=white&labelColor=1a1b27" alt="Email" /></a>
 
 </div>
 
@@ -125,7 +125,7 @@
 
 ### 🤝 Let's build something
 
-<a href="mailto:fahad@pm-axsus.com"><img src="https://img.shields.io/badge/Email-fahad%40pm--axsus.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+<a href="mailto:chhuzaifaiftikhar@gmail.com"><img src="https://img.shields.io/badge/Email-chhuzaifaiftikhar%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 <a href="https://github.com/HuzaifaChaudary"><img src="https://img.shields.io/badge/GitHub-HuzaifaChaudary-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 
 <br/><br/>
