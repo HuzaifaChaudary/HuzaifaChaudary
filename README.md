@@ -1,7 +1,4 @@
-👋 Hi, I’m @HuzaifaChaudary.
-
-* 💻 Full Stack Developer
-* 🤖 Interested in AI & Open Source
-* 🌱 Learning & building with AI
-* 🚀 **Microsoft Playwright Contributor** — [PR #42449](https://github.com/microsoft/playwright/pull/42449) — merged into `main`
-* 🚀 **LangChain Contributor** — [PR #39978](https://github.com/langchain-ai/langchain/pull/39978)
+![Hero](https://coolreadme.xyz/api/hacker?user=https://github.com/huzaifachaudary&status=SHIPPING+CODE&accent=%2300FF88)
+![Avatar](https://coolreadme.xyz/api/avatar-card?user=https://github.com/huzaifachaudary&status=BUILDING&focus=open-source&theme=dark)
+![Streak](https://coolreadme.xyz/api/cat-card?user=https://github.com/huzaifachaudary&streak=42&longest=42&total=1240)
+![Project](https://coolreadme.xyz/api/projects-gallery?projects=my-project|Edge-rendered+README+cards|TypeScript|247)
