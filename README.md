@@ -118,6 +118,20 @@
 
 <br/><br/>
 
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=HuzaifaChaudary&theme=github_dark" width="98%" alt="Profile summary" />
+
+<br/><br/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=HuzaifaChaudary&theme=github_dark" width="41%" alt="Repos per language" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=HuzaifaChaudary&theme=github_dark" width="41%" alt="Most committed language" />
+
+<br/><br/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=HuzaifaChaudary&theme=github_dark" width="41%" alt="Stats" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=HuzaifaChaudary&theme=github_dark&utcOffset=5" width="41%" alt="Productive time" />
+
+<br/><br/>
+
 <img src="https://img.shields.io/github/followers/HuzaifaChaudary?style=for-the-badge&label=Followers&color=0f2027&labelColor=1a1b27&logo=github&logoColor=white" alt="Followers" />
 <img src="https://img.shields.io/github/stars/HuzaifaChaudary?style=for-the-badge&label=Total%20Stars&color=0f2027&labelColor=1a1b27&logo=github&logoColor=white" alt="Stars" />
 
