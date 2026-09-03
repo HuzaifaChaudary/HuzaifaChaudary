@@ -33,8 +33,8 @@
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/Merged%20upstream-4-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="4 merged" />
-<img src="https://img.shields.io/badge/Combined%20stars-419k%2B-0f2027?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="Combined stars" />
+<img src="https://img.shields.io/badge/Merged%20upstream-5-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="5 merged" />
+<img src="https://img.shields.io/badge/Combined%20stars-552k%2B-0f2027?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="Combined stars" />
 <img src="https://img.shields.io/badge/Shipped%20in%20a%20release-jest%20v30.5.1-36BCF7?style=for-the-badge&logo=jest&logoColor=white&labelColor=1a1b27" alt="Shipped in jest v30.5.1" />
 
 </div>
@@ -47,6 +47,7 @@
 | **2** | <img src="https://img.shields.io/badge/Microsoft-5E5E5E?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft" /> **GitHub** · spec-kit | `132.8k` | [#4367](https://github.com/github/spec-kit/pull/4367) — `check-prerequisites` exported the spec path but never checked the file existed, so later phases failed with no guidance |
 | **3** | <img src="https://img.shields.io/badge/OpenJS-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="OpenJS Foundation" /> **Jest** | `45.5k` | [#16413](https://github.com/jestjs/jest/pull/16413) — a leading `#` was read as a URL fragment, so every package `imports` subpath broke under ESM. **Shipped in [v30.5.1](https://github.com/jestjs/jest/releases/tag/v30.5.1)** |
 | **4** | <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangChain" /> **LangChain** | `145.4k` | [#39978](https://github.com/langchain-ai/langchain/pull/39978) — removed a contradictory duplicate block from the Groq `with_structured_output` docstring |
+| **5** | <img src="https://img.shields.io/badge/Microsoft-5E5E5E?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft" /> **GitHub** · spec-kit | `132.8k` | [#4356](https://github.com/github/spec-kit/pull/4356) — command-ref tokens could not hold a hyphen, so a bundled command was unreachable. *Chosen as the canonical fix for [#4198](https://github.com/github/spec-kit/issues/4198) over two competing PRs* |
 
 ### 🔄 In review
 
@@ -54,7 +55,6 @@
 | :--- | :--- |
 | <img src="https://img.shields.io/badge/Elastic-005571?style=flat-square&logo=elasticsearch&logoColor=white" alt="Elastic" /> **Elasticsearch** | [#158437](https://github.com/elastic/elasticsearch/pull/158437) — a malformed SQL cursor came back as a raw JVM error instead of a clean SQL error |
 | <img src="https://img.shields.io/badge/Red%20Hat-EE0000?style=flat-square&logo=redhat&logoColor=white" alt="Red Hat" /> **Quarkus** | [#56360](https://github.com/quarkusio/quarkus/pull/56360) — `@WithFormRead` request filters were moved after the body handler in reverse order, so their priorities were applied backwards |
-| <img src="https://img.shields.io/badge/Microsoft-5E5E5E?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft" /> **GitHub** · spec-kit | [#4356](https://github.com/github/spec-kit/pull/4356) — command-ref tokens could not hold a hyphen, so a real bundled command was unreachable. *Selected by the maintainers as the canonical implementation for [#4198](https://github.com/github/spec-kit/issues/4198)* |
 | <img src="https://img.shields.io/badge/Microsoft-5E5E5E?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft" /> **.NET** · EF Core | [#38875](https://github.com/dotnet/efcore/pull/38875) · [#38880](https://github.com/dotnet/efcore/pull/38880) — a named default constraint carried onto the temporal history table, and a pooled SQLite connection that killed the process from a native callback |
 | <img src="https://img.shields.io/badge/Microsoft-5E5E5E?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft" /> **.NET** · BenchmarkDotNet | [#3242](https://github.com/dotnet/BenchmarkDotNet/pull/3242) — CPU affinity masks wider than 32 processors |
 | **Tailwind CSS** | [#20436](https://github.com/tailwindlabs/tailwindcss/pull/20436) — the v4 upgrade codemod rewrote a React `variant` prop as a utility class |
