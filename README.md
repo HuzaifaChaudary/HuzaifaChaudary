@@ -53,7 +53,7 @@
 
 | Project | Contribution |
 | :--- | :--- |
-| <img src="https://img.shields.io/badge/Elastic-005571?style=flat-square&logo=elasticsearch&logoColor=white" alt="Elastic" /> **Elasticsearch** | [#158437](https://github.com/elastic/elasticsearch/pull/158437) — a malformed SQL cursor came back as a raw JVM error instead of a clean SQL error |
+| <img src="https://img.shields.io/badge/Elastic-005571?style=flat-square&logo=elasticsearch&logoColor=white" alt="Elastic" /> **Elasticsearch** | [#158437](https://github.com/elastic/elasticsearch/pull/158437) · [#158503](https://github.com/elastic/elasticsearch/pull/158503) — a malformed SQL cursor came back as a raw JVM error, and setting `similarity` on an nvidia embedding endpoint always threw a 500 |
 | <img src="https://img.shields.io/badge/Red%20Hat-EE0000?style=flat-square&logo=redhat&logoColor=white" alt="Red Hat" /> **Quarkus** | [#56360](https://github.com/quarkusio/quarkus/pull/56360) — `@WithFormRead` request filters were moved after the body handler in reverse order, so their priorities were applied backwards |
 | <img src="https://img.shields.io/badge/Microsoft-5E5E5E?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft" /> **.NET** · EF Core | [#38875](https://github.com/dotnet/efcore/pull/38875) · [#38880](https://github.com/dotnet/efcore/pull/38880) — a named default constraint carried onto the temporal history table, and a pooled SQLite connection that killed the process from a native callback |
 | <img src="https://img.shields.io/badge/Microsoft-5E5E5E?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft" /> **.NET** · BenchmarkDotNet | [#3242](https://github.com/dotnet/BenchmarkDotNet/pull/3242) — CPU affinity masks wider than 32 processors |
