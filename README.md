@@ -33,8 +33,8 @@
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/Merged%20upstream-6-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="6 merged" />
-<img src="https://img.shields.io/badge/Merged%20into-432k%20stars-0f2027?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="Merged into 432k stars" />
+<img src="https://img.shields.io/badge/Merged%20upstream-7-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="7 merged" />
+<img src="https://img.shields.io/badge/Merged%20into-821k%20stars-0f2027?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="Merged into 821k stars" />
 <img src="https://img.shields.io/badge/Open%20upstream-14-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="14 open upstream" />
 <img src="https://img.shields.io/badge/Shipped%20in%20a%20release-jest%20v30.5.1-36BCF7?style=for-the-badge&logo=jest&logoColor=white&labelColor=1a1b27" alt="Shipped in jest v30.5.1" />
 
@@ -46,10 +46,11 @@
 | :-- | :--- | :-- | :--- |
 | **1** | <img src="https://img.shields.io/badge/Microsoft-5E5E5E?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft" /> **Playwright** | `95.6k` | [#42449](https://github.com/microsoft/playwright/pull/42449) — the UI-mode filter summary was a plain `div`, so it could not be reached or opened from the keyboard |
 | **2** | <img src="https://img.shields.io/badge/Microsoft-5E5E5E?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft" /> **.NET** · BenchmarkDotNet | `11.5k` | [#3242](https://github.com/dotnet/BenchmarkDotNet/pull/3242) — `--affinity` could not address a CPU above the 32nd, and the 64th threw an unhandled `OverflowException` on a 32-bit host instead of a normal option error |
-| **3** | <img src="https://img.shields.io/badge/Microsoft-5E5E5E?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft" /> **GitHub** · spec-kit | `133.6k` | [#4367](https://github.com/github/spec-kit/pull/4367) — `check-prerequisites` exported the spec path but never checked the file existed, so later phases failed with no guidance |
-| **4** | <img src="https://img.shields.io/badge/OpenJS-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="OpenJS Foundation" /> **Jest** | `45.5k` | [#16413](https://github.com/jestjs/jest/pull/16413) — a leading `#` was read as a URL fragment, so every package `imports` subpath broke under ESM. **Shipped in [v30.5.1](https://github.com/jestjs/jest/releases/tag/v30.5.1)** |
-| **5** | <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangChain" /> **LangChain** | `145.7k` | [#39978](https://github.com/langchain-ai/langchain/pull/39978) — removed a contradictory duplicate block from the Groq `with_structured_output` docstring |
-| **6** | <img src="https://img.shields.io/badge/Microsoft-5E5E5E?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft" /> **GitHub** · spec-kit | `133.6k` | [#4356](https://github.com/github/spec-kit/pull/4356) — command-ref tokens could not hold a hyphen, so a bundled command was unreachable. *Chosen as the canonical fix for [#4198](https://github.com/github/spec-kit/issues/4198) over two competing PRs* |
+| **3** | **OpenClaw** | `389k` | [`1bf5fb6`](https://github.com/openclaw/openclaw/commit/1bf5fb68d3896a76740d64bd0d3096d656b15b23) — the macOS Talk overlay was hidden by a dismissal that had already been interrupted. My [#132565](https://github.com/openclaw/openclaw/pull/132565) was superseded, and the fix shipped carrying my `Co-authored-by`. **Released in [v2026.9.1](https://github.com/openclaw/openclaw/releases/tag/v2026.9.1)** |
+| **4** | <img src="https://img.shields.io/badge/Microsoft-5E5E5E?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft" /> **GitHub** · spec-kit | `133.6k` | [#4367](https://github.com/github/spec-kit/pull/4367) — `check-prerequisites` exported the spec path but never checked the file existed, so later phases failed with no guidance |
+| **5** | <img src="https://img.shields.io/badge/OpenJS-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="OpenJS Foundation" /> **Jest** | `45.5k` | [#16413](https://github.com/jestjs/jest/pull/16413) — a leading `#` was read as a URL fragment, so every package `imports` subpath broke under ESM. **Shipped in [v30.5.1](https://github.com/jestjs/jest/releases/tag/v30.5.1)** |
+| **6** | <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangChain" /> **LangChain** | `145.7k` | [#39978](https://github.com/langchain-ai/langchain/pull/39978) — removed a contradictory duplicate block from the Groq `with_structured_output` docstring |
+| **7** | <img src="https://img.shields.io/badge/Microsoft-5E5E5E?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft" /> **GitHub** · spec-kit | `133.6k` | [#4356](https://github.com/github/spec-kit/pull/4356) — command-ref tokens could not hold a hyphen, so a bundled command was unreachable. *Chosen as the canonical fix for [#4198](https://github.com/github/spec-kit/issues/4198) over two competing PRs* |
 
 ### 🔄 In review
 
