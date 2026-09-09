@@ -33,9 +33,9 @@
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/Merged%20upstream-7-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="7 merged" />
+<img src="https://img.shields.io/badge/Merged%20upstream-9-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="9 merged" />
 <img src="https://img.shields.io/badge/Merged%20into-821k%20stars-0f2027?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="Merged into 821k stars" />
-<img src="https://img.shields.io/badge/Open%20upstream-15-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="15 open upstream" />
+<img src="https://img.shields.io/badge/Open%20upstream-14-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="14 open upstream" />
 <img src="https://img.shields.io/badge/Shipped%20in%20a%20release-jest%20v30.5.1-36BCF7?style=for-the-badge&logo=jest&logoColor=white&labelColor=1a1b27" alt="Shipped in jest v30.5.1" />
 
 </div>
@@ -51,6 +51,8 @@
 | **5** | <img src="https://img.shields.io/badge/OpenJS-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="OpenJS Foundation" /> **Jest** | `45.5k` | [#16413](https://github.com/jestjs/jest/pull/16413) — a leading `#` was read as a URL fragment, so every package `imports` subpath broke under ESM. **Shipped in [v30.5.1](https://github.com/jestjs/jest/releases/tag/v30.5.1)** |
 | **6** | <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangChain" /> **LangChain** | `145.7k` | [#39978](https://github.com/langchain-ai/langchain/pull/39978) — removed a contradictory duplicate block from the Groq `with_structured_output` docstring |
 | **7** | <img src="https://img.shields.io/badge/Microsoft-5E5E5E?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft" /> **GitHub** · spec-kit | `133.6k` | [#4356](https://github.com/github/spec-kit/pull/4356) — command-ref tokens could not hold a hyphen, so a bundled command was unreachable. *Chosen as the canonical fix for [#4198](https://github.com/github/spec-kit/issues/4198) over two competing PRs* |
+| **8** | <img src="https://img.shields.io/badge/Apache-D22128?style=flat-square&logo=apache&logoColor=white" alt="Apache" /> **Maven** | `5.3k` | [#13055](https://github.com/apache/maven/pull/13055) — the concurrent builder caught `Exception`, so a step throwing an `Error` printed BUILD SUCCESS while nothing had been built. A reviewer reproduced it and found a second failure wrapped the error in a checked exception, so the halt decision now reads the failures themselves |
+| **9** | **Scrapy** · parsel | `1.4k` | [#367](https://github.com/scrapy/parsel/pull/367) — pinned how C1-range numeric character references extract, gated on the libxml2 version that implements the mapping rather than branching the expectations |
 
 ### 🔄 In review
 
@@ -66,7 +68,6 @@
 | **Tailwind CSS** | [#20436](https://github.com/tailwindlabs/tailwindcss/pull/20436) — the v4 upgrade codemod rewrote a React `variant` prop as a utility class |
 | **Chart.js** | [#12292](https://github.com/chartjs/Chart.js/pull/12292) · [#12293](https://github.com/chartjs/Chart.js/pull/12293) — a legend key that did not match the line it stood for, and a fractional-canvas resize regression |
 | <img src="https://img.shields.io/badge/Apple-000000?style=flat-square&logo=apple&logoColor=white" alt="Apple" /> **Pkl** | [#1840](https://github.com/apple/pkl/pull/1840) — silenced a publish warning for the shaded variant |
-| **Scrapy** · parsel | [#367](https://github.com/scrapy/parsel/pull/367) — pinned how C1-range numeric character references extract |
 | **Netty** | [#17389](https://github.com/netty/netty/pull/17389) — a form field still being decoded was in neither list `destroy()` clears, so a client that goes away mid-upload leaked the field and its slice of the inbound buffer. Vert.x installs the exact factory configuration this fires in |
 
 ---
