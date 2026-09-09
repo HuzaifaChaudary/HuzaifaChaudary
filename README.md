@@ -35,7 +35,7 @@
 
 <img src="https://img.shields.io/badge/Merged%20upstream-7-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="7 merged" />
 <img src="https://img.shields.io/badge/Merged%20into-821k%20stars-0f2027?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="Merged into 821k stars" />
-<img src="https://img.shields.io/badge/Open%20upstream-14-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="14 open upstream" />
+<img src="https://img.shields.io/badge/Open%20upstream-15-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="15 open upstream" />
 <img src="https://img.shields.io/badge/Shipped%20in%20a%20release-jest%20v30.5.1-36BCF7?style=for-the-badge&logo=jest&logoColor=white&labelColor=1a1b27" alt="Shipped in jest v30.5.1" />
 
 </div>
@@ -67,6 +67,7 @@
 | **Chart.js** | [#12292](https://github.com/chartjs/Chart.js/pull/12292) · [#12293](https://github.com/chartjs/Chart.js/pull/12293) — a legend key that did not match the line it stood for, and a fractional-canvas resize regression |
 | <img src="https://img.shields.io/badge/Apple-000000?style=flat-square&logo=apple&logoColor=white" alt="Apple" /> **Pkl** | [#1840](https://github.com/apple/pkl/pull/1840) — silenced a publish warning for the shaded variant |
 | **Scrapy** · parsel | [#367](https://github.com/scrapy/parsel/pull/367) — pinned how C1-range numeric character references extract |
+| **Netty** | [#17389](https://github.com/netty/netty/pull/17389) — a form field still being decoded was in neither list `destroy()` clears, so a client that goes away mid-upload leaked the field and its slice of the inbound buffer. Vert.x installs the exact factory configuration this fires in |
 
 ---
 
