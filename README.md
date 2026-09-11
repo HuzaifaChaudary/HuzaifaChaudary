@@ -35,7 +35,7 @@
 
 <img src="https://img.shields.io/badge/Merged%20upstream-10-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="10 merged" />
 <img src="https://img.shields.io/badge/Merged%20into-836k%20stars-0f2027?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="Merged into 836k stars" />
-<img src="https://img.shields.io/badge/Open%20upstream-14-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="14 open upstream" />
+<img src="https://img.shields.io/badge/Open%20upstream-15-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="15 open upstream" />
 <img src="https://img.shields.io/badge/Shipped%20in%20a%20release-jest%20v30.5.1-36BCF7?style=for-the-badge&logo=jest&logoColor=white&labelColor=1a1b27" alt="Shipped in jest v30.5.1" />
 
 </div>
@@ -61,7 +61,7 @@
 | :--- | :--- |
 | <img src="https://img.shields.io/badge/Elastic-005571?style=flat-square&logo=elasticsearch&logoColor=white" alt="Elastic" /> **Elasticsearch** | [#158437](https://github.com/elastic/elasticsearch/pull/158437) · [#158503](https://github.com/elastic/elasticsearch/pull/158503) — a malformed SQL cursor came back as a raw JVM error, and setting `similarity` on an nvidia embedding endpoint always threw a 500 |
 | <img src="https://img.shields.io/badge/Red%20Hat-EE0000?style=flat-square&logo=redhat&logoColor=white" alt="Red Hat" /> **Quarkus** | [#56360](https://github.com/quarkusio/quarkus/pull/56360) — `@WithFormRead` request filters were moved after the body handler in reverse order, so their priorities were applied backwards |
-| <img src="https://img.shields.io/badge/Microsoft-5E5E5E?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft" /> **.NET** · EF Core | [#38875](https://github.com/dotnet/efcore/pull/38875) — a named default constraint carried onto the temporal history table |
+| <img src="https://img.shields.io/badge/Microsoft-5E5E5E?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft" /> **.NET** · EF Core | [#38875](https://github.com/dotnet/efcore/pull/38875) · [#38971](https://github.com/dotnet/efcore/pull/38971) — a named default constraint carried onto the temporal history table, and SQLite commands that reported success while a later statement or a busy commit had rolled the write back |
 | <img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="pandas" /> **pandas** | [#68035](https://github.com/pandas-dev/pandas/pull/68035) · [#68036](https://github.com/pandas-dev/pandas/pull/68036) — an `Enum` subclass is iterable but `is_list_like` said otherwise so it could not be used as `columns`, and `MultiIndex.factorize` rebuilt its uniques from tuples, silently dropping extension dtypes and level names |
 | <img src="https://img.shields.io/badge/SciPy-8CAAE6?style=flat-square&logo=scipy&logoColor=white" alt="SciPy" /> **SciPy** | [#26100](https://github.com/scipy/scipy/pull/26100) — `fcluster` read one slot past the end of its criterion array, so `maxclust` with `t=0` returned whatever was in that memory |
 | <img src="https://img.shields.io/badge/Microsoft-5E5E5E?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft" /> **.NET** · ML.NET | [#7692](https://github.com/dotnet/machinelearning/pull/7692) — `DataFrame.Join` and `Merge` spun forever when both suffixes were the same string, open since 2022 |
