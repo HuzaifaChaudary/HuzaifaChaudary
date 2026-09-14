@@ -150,7 +150,7 @@
 
 ---
 
-## 🐍 Watch the snake eat my contributions
+## 🐍 Watch the snake eat my daily contributions
 
 <div align="center">
 
