@@ -35,7 +35,7 @@
 
 <img src="https://img.shields.io/badge/Merged%20upstream-15-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="15 merged" />
 <img src="https://img.shields.io/badge/Merged%20into-890k%20stars-0f2027?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="Merged into 890k stars" />
-<img src="https://img.shields.io/badge/Open%20upstream-19-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="19 open upstream" />
+<img src="https://img.shields.io/badge/Open%20upstream-21-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="21 open upstream" />
 <img src="https://img.shields.io/badge/Shipped%20in%20a%20release-jest%20v30.5.1-36BCF7?style=for-the-badge&logo=jest&logoColor=white&labelColor=1a1b27" alt="Shipped in jest v30.5.1" />
 
 </div>
@@ -65,6 +65,7 @@
 | Project | Contribution |
 | :--- | :--- |
 | <img src="https://img.shields.io/badge/Prettier-1A2B34?style=flat-square&logo=prettier&logoColor=F7B93E" alt="Prettier" /> **Prettier** | [#20128](https://github.com/prettier/prettier/pull/20128) · [#20129](https://github.com/prettier/prettier/pull/20129) · [#20130](https://github.com/prettier/prettier/pull/20130) — nested emphasis around a bare URL turned into strong emphasis, a conditional comment printed its borrowed tag markers twice and invented text, and a JSX comment that moved on every run, open since 2017 |
+| <img src="https://img.shields.io/badge/Amazon%20AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS" /> **AWS** · CLI, CDK CLI | [aws-cli#10677](https://github.com/aws/aws-cli/pull/10677) · [aws-cdk-cli#1988](https://github.com/aws/aws-cdk-cli/pull/1988) — `--generate-cli-skeleton output` failed validation on its own sample data for 4,638 of 17,737 operations, open since 2017; and `cdk import` submitted the template CloudFormation mangles, so the import failed naming a resource nobody touched |
 | <img src="https://img.shields.io/badge/Elastic-005571?style=flat-square&logo=elasticsearch&logoColor=white" alt="Elastic" /> **Elasticsearch** | [#158437](https://github.com/elastic/elasticsearch/pull/158437) · [#158503](https://github.com/elastic/elasticsearch/pull/158503) — a malformed SQL cursor came back as a raw JVM error, and setting `similarity` on an nvidia embedding endpoint always threw a 500 |
 | <img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="pandas" /> **pandas** | [#68035](https://github.com/pandas-dev/pandas/pull/68035) · [#68036](https://github.com/pandas-dev/pandas/pull/68036) — an `Enum` subclass is iterable but `is_list_like` said otherwise so it could not be used as `columns`, and `MultiIndex.factorize` rebuilt its uniques from tuples, silently dropping extension dtypes and level names |
 | <img src="https://img.shields.io/badge/SciPy-8CAAE6?style=flat-square&logo=scipy&logoColor=white" alt="SciPy" /> **SciPy** | [#26100](https://github.com/scipy/scipy/pull/26100) — `fcluster` read one slot past the end of its criterion array, so `maxclust` with `t=0` returned whatever was in that memory |
