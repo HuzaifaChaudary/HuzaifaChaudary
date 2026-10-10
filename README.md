@@ -23,7 +23,7 @@
 - 🆘 &nbsp;**Looking for help with** — building reliable, scalable AI systems and improving production-grade software architecture.
 - 🌱 &nbsp;**Currently learning** — advanced AI/LLM engineering, distributed systems, cloud infrastructure, and scalable backend architecture.
 - 💬 &nbsp;**Ask me about** — TypeScript, Python, Next.js, React, Node.js, AWS, AI/LLM applications, APIs, and full-stack development.
-- ⚡ &nbsp;**Fun fact** — I have upstream code merged at **Google** (Gson), **Microsoft** (Playwright, GitHub spec-kit, EF Core), the **Apache Software Foundation** (Maven), **Red Hat** (Quarkus), the **OpenJS Foundation** (Jest) and **LangChain** — and my Jest fix shipped in **v30.5.1**, credited by name in the release notes.
+- ⚡ &nbsp;**Fun fact** — I have upstream code merged at **Google** (Gson), **Microsoft** (Playwright, GitHub spec-kit, EF Core, ML.NET), the **Apache Software Foundation** (Maven), **Red Hat** (Quarkus), the **OpenJS Foundation** (Jest), **SciPy** and **LangChain** — and my Jest fix shipped in **v30.5.1**, credited by name in the release notes.
 
 ---
 
@@ -33,9 +33,9 @@
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/Merged%20upstream-15-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="15 merged" />
-<img src="https://img.shields.io/badge/Merged%20into-890k%20stars-0f2027?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="Merged into 890k stars" />
-<img src="https://img.shields.io/badge/Open%20upstream-21-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="21 open upstream" />
+<img src="https://img.shields.io/badge/Merged%20upstream-17-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="17 merged" />
+<img src="https://img.shields.io/badge/Merged%20into-915k%20stars-0f2027?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="Merged into 915k stars" />
+<img src="https://img.shields.io/badge/Open%20upstream-14-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="14 open upstream" />
 <img src="https://img.shields.io/badge/Shipped%20in%20a%20release-jest%20v30.5.1-36BCF7?style=for-the-badge&logo=jest&logoColor=white&labelColor=1a1b27" alt="Shipped in jest v30.5.1" />
 
 </div>
@@ -59,21 +59,20 @@
 | **13** | <img src="https://img.shields.io/badge/Apache-D22128?style=flat-square&logo=apache&logoColor=white" alt="Apache" /> **Maven** | `5.4k` | [#13055](https://github.com/apache/maven/pull/13055) — the concurrent builder caught `Exception`, so a step throwing an `Error` printed BUILD SUCCESS while nothing had been built. A reviewer reproduced it and found a second failure wrapped the error in a checked exception, so the halt decision now reads the failures themselves |
 | **14** | **Scrapy** · parsel | `1.4k` | [#367](https://github.com/scrapy/parsel/pull/367) — pinned how C1-range numeric character references extract, gated on the libxml2 version that implements the mapping rather than branching the expectations |
 | **15** | <img src="https://img.shields.io/badge/Red%20Hat-EE0000?style=flat-square&logo=redhat&logoColor=white" alt="Red Hat" /> **Quarkus** | `15.9k` | [#56360](https://github.com/quarkusio/quarkus/pull/56360) — `@WithFormRead` request filters were moved after the body handler in reverse order, so their priorities were applied backwards. **Merged by a Quarkus maintainer** |
+| **16** | <img src="https://img.shields.io/badge/SciPy-8CAAE6?style=flat-square&logo=scipy&logoColor=white" alt="SciPy" /> **SciPy** | `15.1k` | [#26100](https://github.com/scipy/scipy/pull/26100) — `fcluster` with `maxclust` and `t=0` read one slot past the end of its criterion array, so the answer came from whatever was in that memory. **Merged by a SciPy maintainer for 2.0.0** |
+| **17** | <img src="https://img.shields.io/badge/Microsoft-5E5E5E?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft" /> **.NET** · ML.NET | `9.4k` | [#7692](https://github.com/dotnet/machinelearning/pull/7692) — `DataFrame.Join` and `Merge` never returned when both suffixes were the same string. Open since 2022 |
 
 ### 🔄 In review
 
 | Project | Contribution |
 | :--- | :--- |
-| <img src="https://img.shields.io/badge/Prettier-1A2B34?style=flat-square&logo=prettier&logoColor=F7B93E" alt="Prettier" /> **Prettier** | [#20128](https://github.com/prettier/prettier/pull/20128) · [#20129](https://github.com/prettier/prettier/pull/20129) · [#20130](https://github.com/prettier/prettier/pull/20130) — nested emphasis around a bare URL turned into strong emphasis, a conditional comment printed its borrowed tag markers twice and invented text, and a JSX comment that moved on every run, open since 2017 |
+| <img src="https://img.shields.io/badge/Prettier-1A2B34?style=flat-square&logo=prettier&logoColor=F7B93E" alt="Prettier" /> **Prettier** | [#20128](https://github.com/prettier/prettier/pull/20128) — nested emphasis around a bare URL turned into strong emphasis, open since 2020 |
 | <img src="https://img.shields.io/badge/Amazon%20AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS" /> **AWS** · CLI, CDK CLI | [aws-cli#10677](https://github.com/aws/aws-cli/pull/10677) · [aws-cdk-cli#1988](https://github.com/aws/aws-cdk-cli/pull/1988) — `--generate-cli-skeleton output` failed validation on its own sample data for 4,638 of 17,737 operations, open since 2017; and `cdk import` submitted the template CloudFormation mangles, so the import failed naming a resource nobody touched |
-| <img src="https://img.shields.io/badge/Elastic-005571?style=flat-square&logo=elasticsearch&logoColor=white" alt="Elastic" /> **Elasticsearch** | [#158437](https://github.com/elastic/elasticsearch/pull/158437) · [#158503](https://github.com/elastic/elasticsearch/pull/158503) — a malformed SQL cursor came back as a raw JVM error, and setting `similarity` on an nvidia embedding endpoint always threw a 500 |
+| <img src="https://img.shields.io/badge/Elastic-005571?style=flat-square&logo=elasticsearch&logoColor=white" alt="Elastic" /> **Elasticsearch** | [#158437](https://github.com/elastic/elasticsearch/pull/158437) — a malformed SQL cursor came back as a raw JVM error |
 | <img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="pandas" /> **pandas** | [#68035](https://github.com/pandas-dev/pandas/pull/68035) · [#68036](https://github.com/pandas-dev/pandas/pull/68036) — an `Enum` subclass is iterable but `is_list_like` said otherwise so it could not be used as `columns`, and `MultiIndex.factorize` rebuilt its uniques from tuples, silently dropping extension dtypes and level names |
-| <img src="https://img.shields.io/badge/SciPy-8CAAE6?style=flat-square&logo=scipy&logoColor=white" alt="SciPy" /> **SciPy** | [#26100](https://github.com/scipy/scipy/pull/26100) — `fcluster` read one slot past the end of its criterion array, so `maxclust` with `t=0` returned whatever was in that memory |
-| <img src="https://img.shields.io/badge/Microsoft-5E5E5E?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft" /> **.NET** · ML.NET | [#7692](https://github.com/dotnet/machinelearning/pull/7692) — `DataFrame.Join` and `Merge` spun forever when both suffixes were the same string, open since 2022 |
 | **mypy** | [#21941](https://github.com/python/mypy/pull/21941) — stubtest aborted the entire run when a `classmethod`'s first parameter wasn't named `cls`, taking out stub checking for a whole distribution |
 | **Tailwind CSS** | [#20436](https://github.com/tailwindlabs/tailwindcss/pull/20436) — the v4 upgrade codemod rewrote a React `variant` prop as a utility class |
 | **Chart.js** | [#12292](https://github.com/chartjs/Chart.js/pull/12292) · [#12293](https://github.com/chartjs/Chart.js/pull/12293) — a legend key that did not match the line it stood for, and a fractional-canvas resize regression |
-| <img src="https://img.shields.io/badge/Apple-000000?style=flat-square&logo=apple&logoColor=white" alt="Apple" /> **Pkl** | [#1840](https://github.com/apple/pkl/pull/1840) — silenced a publish warning for the shaded variant |
 | **Netty** | [#17389](https://github.com/netty/netty/pull/17389) — a form field still being decoded was in neither list `destroy()` clears, so a client that goes away mid-upload leaked the field and its slice of the inbound buffer. Vert.x installs the exact factory configuration this fires in |
 
 ---
