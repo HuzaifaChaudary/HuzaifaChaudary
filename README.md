@@ -35,7 +35,7 @@
 
 <img src="https://img.shields.io/badge/Merged%20upstream-17-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="17 merged" />
 <img src="https://img.shields.io/badge/Merged%20into-915k%20stars-0f2027?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="Merged into 915k stars" />
-<img src="https://img.shields.io/badge/Open%20upstream-14-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="14 open upstream" />
+<img src="https://img.shields.io/badge/Open%20upstream-13-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="13 open upstream" />
 <img src="https://img.shields.io/badge/Shipped%20in%20a%20release-jest%20v30.5.1-36BCF7?style=for-the-badge&logo=jest&logoColor=white&labelColor=1a1b27" alt="Shipped in jest v30.5.1" />
 
 </div>
