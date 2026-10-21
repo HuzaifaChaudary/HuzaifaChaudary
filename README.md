@@ -35,7 +35,7 @@
 
 <img src="https://img.shields.io/badge/Merged%20upstream-18-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="18 merged" />
 <img src="https://img.shields.io/badge/Merged%20into-936k%20stars-0f2027?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="Merged into 936k stars" />
-<img src="https://img.shields.io/badge/Open%20upstream-13-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="13 open upstream" />
+<img src="https://img.shields.io/badge/Open%20upstream-14-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="14 open upstream" />
 <img src="https://img.shields.io/badge/Shipped%20in%20a%20release-jest%20v30.5.1-36BCF7?style=for-the-badge&logo=jest&logoColor=white&labelColor=1a1b27" alt="Shipped in jest v30.5.1" />
 
 </div>
@@ -67,7 +67,7 @@
 
 | Project | Contribution |
 | :--- | :--- |
-| <img src="https://img.shields.io/badge/Apple-000000?style=flat-square&logo=apple&logoColor=white" alt="Apple" /> **Core ML Tools** | [#2899](https://github.com/apple/coremltools/pull/2899) — `nn.MultiheadAttention` in inference mode runs through `_native_multi_head_attention`, which had no converter, so every model built on it failed to convert to Core ML. Open since 2024 |
+| <img src="https://img.shields.io/badge/Apple-000000?style=flat-square&logo=apple&logoColor=white" alt="Apple" /> **Core ML Tools** | [#2899](https://github.com/apple/coremltools/pull/2899) · [#2907](https://github.com/apple/coremltools/pull/2907) — `nn.MultiheadAttention` in inference mode runs through `_native_multi_head_attention`, which had no converter, so every model built on it failed to convert to Core ML, open since 2024; and antialiased resizes (torchvision `Resize`'s default) silently dropped the filter, off by 0.116 on average, which also uncovered a Core ML runtime bug in `reduce_sum` past 65,536 elements ([#2906](https://github.com/apple/coremltools/issues/2906)) |
 | <img src="https://img.shields.io/badge/Prettier-1A2B34?style=flat-square&logo=prettier&logoColor=F7B93E" alt="Prettier" /> **Prettier** | [#20128](https://github.com/prettier/prettier/pull/20128) — nested emphasis around a bare URL turned into strong emphasis, open since 2020 |
 | <img src="https://img.shields.io/badge/Amazon%20AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS" /> **AWS** · CLI, CDK CLI | [aws-cli#10677](https://github.com/aws/aws-cli/pull/10677) · [aws-cdk-cli#1988](https://github.com/aws/aws-cdk-cli/pull/1988) — `--generate-cli-skeleton output` failed validation on its own sample data for 4,638 of 17,737 operations, open since 2017; and `cdk import` submitted the template CloudFormation mangles, so the import failed naming a resource nobody touched |
 | <img src="https://img.shields.io/badge/Elastic-005571?style=flat-square&logo=elasticsearch&logoColor=white" alt="Elastic" /> **Elasticsearch** | [#158437](https://github.com/elastic/elasticsearch/pull/158437) — a malformed SQL cursor came back as a raw JVM error |
