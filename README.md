@@ -23,7 +23,7 @@
 - 🆘 &nbsp;**Looking for help with** — building reliable, scalable AI systems and improving production-grade software architecture.
 - 🌱 &nbsp;**Currently learning** — advanced AI/LLM engineering, distributed systems, cloud infrastructure, and scalable backend architecture.
 - 💬 &nbsp;**Ask me about** — TypeScript, Python, Next.js, React, Node.js, AWS, AI/LLM applications, APIs, and full-stack development.
-- ⚡ &nbsp;**Fun fact** — I have upstream code merged at **Google** (Gson), **Microsoft** (Playwright, GitHub spec-kit, EF Core, ML.NET), the **Apache Software Foundation** (Maven), **Red Hat** (Quarkus), the **OpenJS Foundation** (Jest), **SciPy**, the **Python** org (mypy) and **LangChain** — and my Jest fix shipped in **v30.5.1**, credited by name in the release notes.
+- ⚡ &nbsp;**Fun fact** — I have upstream code merged at **Google** (Gson), **Microsoft** (Playwright, GitHub spec-kit, EF Core, ML.NET), the **Apache Software Foundation** (Maven), **Red Hat** (Quarkus), the **OpenJS Foundation** (Jest), **SciPy**, the **Python** org (mypy), **radare2** and **LangChain** — and my Jest fix shipped in **v30.5.1**, credited by name in the release notes.
 
 ---
 
@@ -33,9 +33,9 @@
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/Merged%20upstream-18-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="18 merged" />
-<img src="https://img.shields.io/badge/Merged%20into-936k%20stars-0f2027?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="Merged into 936k stars" />
-<img src="https://img.shields.io/badge/Open%20upstream-14-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="14 open upstream" />
+<img src="https://img.shields.io/badge/Merged%20upstream-19-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="19 merged" />
+<img src="https://img.shields.io/badge/Merged%20into-961k%20stars-0f2027?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="Merged into 961k stars" />
+<img src="https://img.shields.io/badge/Open%20upstream-17-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="17 open upstream" />
 <img src="https://img.shields.io/badge/Shipped%20in%20a%20release-jest%20v30.5.1-36BCF7?style=for-the-badge&logo=jest&logoColor=white&labelColor=1a1b27" alt="Shipped in jest v30.5.1" />
 
 </div>
@@ -62,6 +62,7 @@
 | **16** | <img src="https://img.shields.io/badge/SciPy-8CAAE6?style=flat-square&logo=scipy&logoColor=white" alt="SciPy" /> **SciPy** | `15.1k` | [#26100](https://github.com/scipy/scipy/pull/26100) — `fcluster` with `maxclust` and `t=0` read one slot past the end of its criterion array, so the answer came from whatever was in that memory. **Merged by a SciPy maintainer for 2.0.0** |
 | **17** | <img src="https://img.shields.io/badge/Microsoft-5E5E5E?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft" /> **.NET** · ML.NET | `9.4k` | [#7692](https://github.com/dotnet/machinelearning/pull/7692) — `DataFrame.Join` and `Merge` never returned when both suffixes were the same string. Open since 2022 |
 | **18** | <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> **mypy** | `20.7k` | [#21941](https://github.com/python/mypy/pull/21941) — stubtest aborted the entire run when a `classmethod`'s first parameter wasn't named `cls`, taking out stub checking for a whole distribution. **Merged by a mypy core developer** |
+| **19** | **radare2** | `25.1k` | [#27118](https://github.com/radareorg/radare2/pull/27118) — the reverse-engineering framework aborted `rabin2` on a valid 11-byte WebAssembly module whose export section was empty, because an empty section vector was sorted while still NULL. Fixed with a regression test built from raw bytes, no fixture file. **Merged by radare2's creator** |
 
 ### 🔄 In review
 
@@ -75,6 +76,8 @@
 | **Tailwind CSS** | [#20436](https://github.com/tailwindlabs/tailwindcss/pull/20436) — the v4 upgrade codemod rewrote a React `variant` prop as a utility class |
 | **Chart.js** | [#12292](https://github.com/chartjs/Chart.js/pull/12292) · [#12293](https://github.com/chartjs/Chart.js/pull/12293) — a legend key that did not match the line it stood for, and a fractional-canvas resize regression |
 | **Netty** | [#17389](https://github.com/netty/netty/pull/17389) — a form field still being decoded was in neither list `destroy()` clears, so a client that goes away mid-upload leaked the field and its slice of the inbound buffer. Vert.x installs the exact factory configuration this fires in |
+| **jadx** | [#3026](https://github.com/skylot/jadx/pull/3026) · [#3028](https://github.com/skylot/jadx/pull/3028) — the Android decompiler silently produced wrong code for a loop exit shared with code before the loop, and a method reached through a dependency cycle lost its `throws` declaration |
+| **ONNX** | [#8654](https://github.com/onnx/onnx/pull/8654) — the reference `ConvTranspose` crashed when an explicit `output_shape` needed padding; found by running the reference evaluator against onnxruntime |
 
 ---
 
