@@ -33,9 +33,9 @@
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/Merged%20upstream-19-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="19 merged" />
-<img src="https://img.shields.io/badge/Merged%20into-961k%20stars-0f2027?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="Merged into 961k stars" />
-<img src="https://img.shields.io/badge/Open%20upstream-17-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="17 open upstream" />
+<img src="https://img.shields.io/badge/Merged%20upstream-26-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="26 merged" />
+<img src="https://img.shields.io/badge/Merged%20into-968k%20stars-0f2027?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="Merged into 968k stars" />
+<img src="https://img.shields.io/badge/Open%20upstream-33-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="33 open upstream" />
 <img src="https://img.shields.io/badge/Shipped%20in%20a%20release-jest%20v30.5.1-36BCF7?style=for-the-badge&logo=jest&logoColor=white&labelColor=1a1b27" alt="Shipped in jest v30.5.1" />
 
 </div>
@@ -63,6 +63,13 @@
 | **17** | <img src="https://img.shields.io/badge/Microsoft-5E5E5E?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft" /> **.NET** · ML.NET | `9.4k` | [#7692](https://github.com/dotnet/machinelearning/pull/7692) — `DataFrame.Join` and `Merge` never returned when both suffixes were the same string. Open since 2022 |
 | **18** | <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> **mypy** | `20.7k` | [#21941](https://github.com/python/mypy/pull/21941) — stubtest aborted the entire run when a `classmethod`'s first parameter wasn't named `cls`, taking out stub checking for a whole distribution. **Merged by a mypy core developer** |
 | **19** | **radare2** | `25.1k` | [#27118](https://github.com/radareorg/radare2/pull/27118) — the reverse-engineering framework aborted `rabin2` on a valid 11-byte WebAssembly module whose export section was empty, because an empty section vector was sorted while still NULL. Fixed with a regression test built from raw bytes, no fixture file. **Merged by radare2's creator** |
+| **20** | **radare2** | `25.1k` | [#27132](https://github.com/radareorg/radare2/pull/27132) — the arm64 assembler turned every `ldp` and `stp` into a different instruction, so `stp x29, x30, [sp, -0x20]!`, the usual function prologue, was written as an `ldp`. All 68 `ldp` and `stp` forms tested now give the same bytes as `llvm-mc`, and SIMD register pairs were added after a reviewer asked about them. **Merged by radare2's creator** |
+| **21** | **radare2** | `25.1k` | [#27137](https://github.com/radareorg/radare2/pull/27137) — negative offsets in arm32 `ldr` and `str` were encoded as positive ones, so `ldr r0, [r1, #-4]` became `ldr r0, [r1, #4092]` with no error, and a negative register offset came out as an `add`. Six tests that had been marked broken pass now. **Merged by radare2's creator** |
+| **22** | **radare2** | `25.1k` | [#27139](https://github.com/radareorg/radare2/pull/27139) — the `dis` and `pyc` disassemblers crashed on a null pointer when no file was loaded, as with `rasm2 -d`. Found with an ASan build by disassembling random bytes with every plugin, 8,500 runs, where these were the only two crashes. **Merged by radare2's creator** |
+| **23** | **radare2** | `25.1k` | [#27141](https://github.com/radareorg/radare2/pull/27141) — arm32 `cmp`, `cmn`, `tst` and `teq` with an immediate overwrote the condition, so `cmpeq` assembled as an unconditional `cmp`, and above 255 the register was lost too. **Merged by radare2's creator** |
+| **24** | **Markdig** | `5.3k` | [#966](https://github.com/xoofx/markdig/pull/966) — paragraphs, headings and code info strings were trimmed of every kind of Unicode space instead of only spaces and tabs, so a trailing no-break space or CJK ideographic space disappeared. Found by rendering 19,200 random documents with Markdig and cmark-gfm: 608 differences fixed, none new. **Merged by Markdig's author** |
+| **25** | **Markdig** | `5.3k` | [#967](https://github.com/xoofx/markdig/pull/967) — an escaped backslash was read again as the start of a second escape, so a code fence info string like `\\*` lost its backslash. **Merged by Markdig's author** |
+| **26** | **pyelftools** | `2.3k` | [#683](https://github.com/eliben/pyelftools/pull/683) — reading DWARF from any RISC-V object file failed with `Unsupported relocation type`, because there were no RISC-V relocations at all. Adds the 15 relocation types found in RISC-V debug sections, checked against `llvm-dwarfdump` on 16 GCC and clang objects. **Merged by pyelftools' creator** |
 
 ### 🔄 In review
 
