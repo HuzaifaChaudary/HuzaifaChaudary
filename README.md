@@ -33,9 +33,9 @@
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/Merged%20upstream-26-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="26 merged" />
-<img src="https://img.shields.io/badge/Merged%20into-968k%20stars-0f2027?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="Merged into 968k stars" />
-<img src="https://img.shields.io/badge/Open%20upstream-33-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="33 open upstream" />
+<img src="https://img.shields.io/badge/Merged%20upstream-27-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="27 merged" />
+<img src="https://img.shields.io/badge/Merged%20into-1.02M%20stars-0f2027?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="Merged into 1.02M stars" />
+<img src="https://img.shields.io/badge/Open%20upstream-32-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="32 open upstream" />
 <img src="https://img.shields.io/badge/Shipped%20in%20a%20release-jest%20v30.5.1-36BCF7?style=for-the-badge&logo=jest&logoColor=white&labelColor=1a1b27" alt="Shipped in jest v30.5.1" />
 
 </div>
@@ -70,6 +70,7 @@
 | **24** | **Markdig** | `5.3k` | [#966](https://github.com/xoofx/markdig/pull/966) — paragraphs, headings and code info strings were trimmed of every kind of Unicode space instead of only spaces and tabs, so a trailing no-break space or CJK ideographic space disappeared. Found by rendering 19,200 random documents with Markdig and cmark-gfm: 608 differences fixed, none new. **Merged by Markdig's author** |
 | **25** | **Markdig** | `5.3k` | [#967](https://github.com/xoofx/markdig/pull/967) — an escaped backslash was read again as the start of a second escape, so a code fence info string like `\\*` lost its backslash. **Merged by Markdig's author** |
 | **26** | **pyelftools** | `2.3k` | [#683](https://github.com/eliben/pyelftools/pull/683) — reading DWARF from any RISC-V object file failed with `Unsupported relocation type`, because there were no RISC-V relocations at all. Adds the 15 relocation types found in RISC-V debug sections, checked against `llvm-dwarfdump` on 16 GCC and clang objects. **Merged by pyelftools' creator** |
+| **27** | **jadx** | `51.3k` | [#3028](https://github.com/skylot/jadx/pull/3028) — a method first reached through a dependency cycle was marked as visited before its code was loaded, so it never got its `throws` declaration and the decompiled Java did not compile. Found in a real APK, where 10 methods in 3 classes were missing it. **Merged by jadx's creator** |
 
 ### 🔄 In review
 
@@ -83,7 +84,7 @@
 | **Tailwind CSS** | [#20436](https://github.com/tailwindlabs/tailwindcss/pull/20436) — the v4 upgrade codemod rewrote a React `variant` prop as a utility class |
 | **Chart.js** | [#12292](https://github.com/chartjs/Chart.js/pull/12292) · [#12293](https://github.com/chartjs/Chart.js/pull/12293) — a legend key that did not match the line it stood for, and a fractional-canvas resize regression |
 | **Netty** | [#17389](https://github.com/netty/netty/pull/17389) — a form field still being decoded was in neither list `destroy()` clears, so a client that goes away mid-upload leaked the field and its slice of the inbound buffer. Vert.x installs the exact factory configuration this fires in |
-| **jadx** | [#3026](https://github.com/skylot/jadx/pull/3026) · [#3028](https://github.com/skylot/jadx/pull/3028) — the Android decompiler silently produced wrong code for a loop exit shared with code before the loop, and a method reached through a dependency cycle lost its `throws` declaration |
+| **jadx** | [#3026](https://github.com/skylot/jadx/pull/3026) — the Android decompiler silently produced wrong code for a loop exit shared with code before the loop |
 | **ONNX** | [#8654](https://github.com/onnx/onnx/pull/8654) — the reference `ConvTranspose` crashed when an explicit `output_shape` needed padding; found by running the reference evaluator against onnxruntime |
 
 ---
