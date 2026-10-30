@@ -23,7 +23,7 @@
 - 🆘 &nbsp;**Looking for help with** — building reliable, scalable AI systems and improving production-grade software architecture.
 - 🌱 &nbsp;**Currently learning** — advanced AI/LLM engineering, distributed systems, cloud infrastructure, and scalable backend architecture.
 - 💬 &nbsp;**Ask me about** — TypeScript, Python, Next.js, React, Node.js, AWS, AI/LLM applications, APIs, and full-stack development.
-- ⚡ &nbsp;**Fun fact** — I have upstream code merged at **Google** (Gson), **Microsoft** (Playwright, GitHub spec-kit, EF Core, ML.NET), the **Apache Software Foundation** (Maven), **Red Hat** (Quarkus), the **OpenJS Foundation** (Jest), **SciPy**, the **Python** org (mypy), **radare2** and **LangChain** — and my Jest fix shipped in **v30.5.1**, credited by name in the release notes.
+- ⚡ &nbsp;**Fun fact** — I have upstream code merged at **Google** (Gson), **Microsoft** (Playwright, GitHub spec-kit, EF Core, ML.NET, ONNX Runtime), the **Apache Software Foundation** (Maven), **Red Hat** (Quarkus), the **OpenJS Foundation** (Jest), **SciPy**, the **Python** org (mypy), **radare2** and **LangChain** — and my Jest fix shipped in **v30.5.1**, credited by name in the release notes.
 
 ---
 
@@ -33,9 +33,9 @@
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/Merged%20upstream-27-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="27 merged" />
-<img src="https://img.shields.io/badge/Merged%20into-1.02M%20stars-0f2027?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="Merged into 1.02M stars" />
-<img src="https://img.shields.io/badge/Open%20upstream-32-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="32 open upstream" />
+<img src="https://img.shields.io/badge/Merged%20upstream-31-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="31 merged" />
+<img src="https://img.shields.io/badge/Merged%20into-1.04M%20stars-0f2027?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="Merged into 1.04M stars" />
+<img src="https://img.shields.io/badge/Open%20upstream-28-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="28 open upstream" />
 <img src="https://img.shields.io/badge/Shipped%20in%20a%20release-jest%20v30.5.1-36BCF7?style=for-the-badge&logo=jest&logoColor=white&labelColor=1a1b27" alt="Shipped in jest v30.5.1" />
 
 </div>
@@ -67,10 +67,14 @@
 | **21** | **radare2** | `25.1k` | [#27137](https://github.com/radareorg/radare2/pull/27137) — negative offsets in arm32 `ldr` and `str` were encoded as positive ones, so `ldr r0, [r1, #-4]` became `ldr r0, [r1, #4092]` with no error, and a negative register offset came out as an `add`. Six tests that had been marked broken pass now. **Merged by radare2's creator** |
 | **22** | **radare2** | `25.1k` | [#27139](https://github.com/radareorg/radare2/pull/27139) — the `dis` and `pyc` disassemblers crashed on a null pointer when no file was loaded, as with `rasm2 -d`. Found with an ASan build by disassembling random bytes with every plugin, 8,500 runs, where these were the only two crashes. **Merged by radare2's creator** |
 | **23** | **radare2** | `25.1k` | [#27141](https://github.com/radareorg/radare2/pull/27141) — arm32 `cmp`, `cmn`, `tst` and `teq` with an immediate overwrote the condition, so `cmpeq` assembled as an unconditional `cmp`, and above 255 the register was lost too. **Merged by radare2's creator** |
-| **24** | **Markdig** | `5.3k` | [#966](https://github.com/xoofx/markdig/pull/966) — paragraphs, headings and code info strings were trimmed of every kind of Unicode space instead of only spaces and tabs, so a trailing no-break space or CJK ideographic space disappeared. Found by rendering 19,200 random documents with Markdig and cmark-gfm: 608 differences fixed, none new. **Merged by Markdig's author** |
-| **25** | **Markdig** | `5.3k` | [#967](https://github.com/xoofx/markdig/pull/967) — an escaped backslash was read again as the start of a second escape, so a code fence info string like `\\*` lost its backslash. **Merged by Markdig's author** |
-| **26** | **pyelftools** | `2.3k` | [#683](https://github.com/eliben/pyelftools/pull/683) — reading DWARF from any RISC-V object file failed with `Unsupported relocation type`, because there were no RISC-V relocations at all. Adds the 15 relocation types found in RISC-V debug sections, checked against `llvm-dwarfdump` on 16 GCC and clang objects. **Merged by pyelftools' creator** |
-| **27** | **jadx** | `51.3k` | [#3028](https://github.com/skylot/jadx/pull/3028) — a method first reached through a dependency cycle was marked as visited before its code was loaded, so it never got its `throws` declaration and the decompiled Java did not compile. Found in a real APK, where 10 methods in 3 classes were missing it. **Merged by jadx's creator** |
+| **24** | **radare2** | `25.2k` | [#27133](https://github.com/radareorg/radare2/pull/27133) — the RISC-V assembler sent stores through the I-type encoder, so `sw a1, 8(sp)` came out as `sw s0, 11(sp)`, `srai` lost its arithmetic bit, and `jalr` broke. Checked against `llvm-mc` on random instruction words, matching encodings went from 880 to 1,934 of 3,482 and wrong ones from 315 to 5. **Merged by radare2's creator** |
+| **25** | **radare2** | `25.2k` | [#27135](https://github.com/radareorg/radare2/pull/27135) — the AVR assembler wrote every I/O address other than `SPL`, `SPH` and `SREG` as 0 in `out`, `sbi` and `cbi`, and assembled the `-X`, `-Y` and `-Z` pre-decrement pointers as post-increment. After review it also rejects addresses that do not fit or carry trailing junk, and `in` takes the same I/O operand. **Merged by radare2's creator** |
+| **26** | **radare2** | `25.2k` | [#27140](https://github.com/radareorg/radare2/pull/27140) — arm32 data-processing immediates above 255 kept only their low 8 bits unless they were a power of two, so `adc r11, r0, 61341696` was assembled with `#0`. radare2's creator checked all 4,096 immediate and rotation combinations across 19 mnemonics, then **landed it on master under my name** |
+| **27** | **Markdig** | `5.3k` | [#966](https://github.com/xoofx/markdig/pull/966) — paragraphs, headings and code info strings were trimmed of every kind of Unicode space instead of only spaces and tabs, so a trailing no-break space or CJK ideographic space disappeared. Found by rendering 19,200 random documents with Markdig and cmark-gfm: 608 differences fixed, none new. **Merged by Markdig's author** |
+| **28** | **Markdig** | `5.3k` | [#967](https://github.com/xoofx/markdig/pull/967) — an escaped backslash was read again as the start of a second escape, so a code fence info string like `\\*` lost its backslash. **Merged by Markdig's author** |
+| **29** | **pyelftools** | `2.3k` | [#683](https://github.com/eliben/pyelftools/pull/683) — reading DWARF from any RISC-V object file failed with `Unsupported relocation type`, because there were no RISC-V relocations at all. Adds the 15 relocation types found in RISC-V debug sections, checked against `llvm-dwarfdump` on 16 GCC and clang objects. **Merged by pyelftools' creator** |
+| **30** | **jadx** | `51.3k` | [#3028](https://github.com/skylot/jadx/pull/3028) — a method first reached through a dependency cycle was marked as visited before its code was loaded, so it never got its `throws` declaration and the decompiled Java did not compile. Found in a real APK, where 10 methods in 3 classes were missing it. **Merged by jadx's creator** |
+| **31** | <img src="https://img.shields.io/badge/Microsoft-5E5E5E?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft" /> **ONNX Runtime** | `22.2k` | [#33543](https://github.com/microsoft/onnxruntime/pull/33543) — the CPU `TopK` comparators stopped being a strict ordering once a NaN was present, so `[1, NaN, 3, 2]` with k = 2 returned `[1, NaN]`. NaN now ranks largest, as the CUDA kernel already did, and the k = 1 fast path keeps its vectorised compare, since a naive NaN check made it 6x slower. **Merged by an ONNX Runtime maintainer** |
 
 ### 🔄 In review
 
