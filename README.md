@@ -33,9 +33,9 @@
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/Merged%20upstream-31-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="31 merged" />
+<img src="https://img.shields.io/badge/Merged%20upstream-32-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="32 merged" />
 <img src="https://img.shields.io/badge/Merged%20into-1.04M%20stars-0f2027?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="Merged into 1.04M stars" />
-<img src="https://img.shields.io/badge/Open%20upstream-28-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="28 open upstream" />
+<img src="https://img.shields.io/badge/Open%20upstream-27-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="27 open upstream" />
 <img src="https://img.shields.io/badge/Shipped%20in%20a%20release-jest%20v30.5.1-36BCF7?style=for-the-badge&logo=jest&logoColor=white&labelColor=1a1b27" alt="Shipped in jest v30.5.1" />
 
 </div>
@@ -75,6 +75,7 @@
 | **29** | **pyelftools** | `2.3k` | [#683](https://github.com/eliben/pyelftools/pull/683) — reading DWARF from any RISC-V object file failed with `Unsupported relocation type`, because there were no RISC-V relocations at all. Adds the 15 relocation types found in RISC-V debug sections, checked against `llvm-dwarfdump` on 16 GCC and clang objects. **Merged by pyelftools' creator** |
 | **30** | **jadx** | `51.3k` | [#3028](https://github.com/skylot/jadx/pull/3028) — a method first reached through a dependency cycle was marked as visited before its code was loaded, so it never got its `throws` declaration and the decompiled Java did not compile. Found in a real APK, where 10 methods in 3 classes were missing it. **Merged by jadx's creator** |
 | **31** | <img src="https://img.shields.io/badge/Microsoft-5E5E5E?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft" /> **ONNX Runtime** | `22.2k` | [#33543](https://github.com/microsoft/onnxruntime/pull/33543) — the CPU `TopK` comparators stopped being a strict ordering once a NaN was present, so `[1, NaN, 3, 2]` with k = 2 returned `[1, NaN]`. NaN now ranks largest, as the CUDA kernel already did, and the k = 1 fast path keeps its vectorised compare, since a naive NaN check made it 6x slower. **Merged by an ONNX Runtime maintainer** |
+| **32** | **pefile** | `2.1k` | [#635](https://github.com/erocarrera/pefile/pull/635) — `write()` put back the zero padding of PE headers cut short by the end of the file, so an unmodified file came out longer: the 97-byte tiny PE files came back as 124 bytes, and `generate_checksum()` was off for them. Found by checksumming 3,419 PE files from the .NET 10 SDK and the radare2 test binaries with an independent implementation. **Merged by a pefile maintainer** |
 
 ### 🔄 In review
 
