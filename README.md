@@ -35,7 +35,7 @@
 
 <img src="https://img.shields.io/badge/Merged%20upstream-39-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="39 merged" />
 <img src="https://img.shields.io/badge/Merged%20into-1.04M%20stars-0f2027?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="Merged into 1.04M stars" />
-<img src="https://img.shields.io/badge/Open%20upstream-27-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="27 open upstream" />
+<img src="https://img.shields.io/badge/Open%20upstream-26-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="26 open upstream" />
 <img src="https://img.shields.io/badge/Shipped%20in%20a%20release-jest%20v30.5.1-36BCF7?style=for-the-badge&logo=jest&logoColor=white&labelColor=1a1b27" alt="Shipped in jest v30.5.1" />
 
 </div>
@@ -94,7 +94,6 @@
 | <img src="https://img.shields.io/badge/Prettier-1A2B34?style=flat-square&logo=prettier&logoColor=F7B93E" alt="Prettier" /> **Prettier** | [#20128](https://github.com/prettier/prettier/pull/20128): nested emphasis around a bare URL turned into strong emphasis, open since 2020 |
 | <img src="https://img.shields.io/badge/Amazon%20AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS" /> **AWS** · CLI, CDK CLI | [aws-cli#10677](https://github.com/aws/aws-cli/pull/10677) · [aws-cdk-cli#1988](https://github.com/aws/aws-cdk-cli/pull/1988): `--generate-cli-skeleton output` failed validation on its own sample data for 4,638 of 17,737 operations, open since 2017; and `cdk import` submitted the template CloudFormation mangles, so the import failed naming a resource nobody touched |
 | <img src="https://img.shields.io/badge/Elastic-005571?style=flat-square&logo=elasticsearch&logoColor=white" alt="Elastic" /> **Elasticsearch** | [#158437](https://github.com/elastic/elasticsearch/pull/158437): a malformed SQL cursor came back as a raw JVM error |
-| <img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="pandas" /> **pandas** | [#68035](https://github.com/pandas-dev/pandas/pull/68035): an `Enum` subclass is iterable but `is_list_like` said otherwise, so it could not be used as `columns` |
 | **Tailwind CSS** | [#20436](https://github.com/tailwindlabs/tailwindcss/pull/20436): the v4 upgrade codemod rewrote a React `variant` prop as a utility class |
 | **Chart.js** | [#12292](https://github.com/chartjs/Chart.js/pull/12292) · [#12293](https://github.com/chartjs/Chart.js/pull/12293): a legend key that did not match the line it stood for, and a fractional-canvas resize regression |
 | **Netty** | [#17389](https://github.com/netty/netty/pull/17389): a form field still being decoded was in neither list `destroy()` clears, so a client that goes away mid-upload leaked the field and its slice of the inbound buffer. Vert.x installs the exact factory configuration this fires in |
