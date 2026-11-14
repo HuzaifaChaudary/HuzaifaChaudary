@@ -33,9 +33,9 @@
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/Merged%20upstream-39-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="39 merged" />
+<img src="https://img.shields.io/badge/Merged%20upstream-41-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="41 merged" />
 <img src="https://img.shields.io/badge/Merged%20into-1.04M%20stars-0f2027?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="Merged into 1.04M stars" />
-<img src="https://img.shields.io/badge/Open%20upstream-26-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="26 open upstream" />
+<img src="https://img.shields.io/badge/Open%20upstream-24-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="24 open upstream" />
 <img src="https://img.shields.io/badge/Shipped%20in%20a%20release-jest%20v30.5.1-36BCF7?style=for-the-badge&logo=jest&logoColor=white&labelColor=1a1b27" alt="Shipped in jest v30.5.1" />
 
 </div>
@@ -83,6 +83,8 @@
 | **37** | **pefile** | `2.1k` | [#648](https://github.com/erocarrera/pefile/pull/648): brought back a commented-out relocation test. The expected count had been copied from a different DLL onto a 97-byte file with no relocations, so the right answer is 0, and the DLL's own count was checked without pefile. **Merged by a pefile maintainer** |
 | **38** | **pefile** | `2.1k` | [#650](https://github.com/erocarrera/pefile/pull/650): brought back the commented-out driver detection test on two real drivers from the test corpus, one of them importing an upper-case `NTOSKRNL.exe` to catch a dropped `.lower()`. **Merged by a pefile maintainer** |
 | **39** | **pefile** | `2.1k` | [#651](https://github.com/erocarrera/pefile/pull/651): a Dependabot bump moved only one CodeQL step to a new version, and the action refuses mixed versions, so CodeQL failed on master and every pull request. All steps pinned to one release with a Dependabot group so it cannot split again. **Merged by a pefile maintainer** |
+| **40** | **pefile** | `2.1k` | [#647](https://github.com/erocarrera/pefile/pull/647): brought back the commented-out `kernel32.dll` export hash test. The old expected value came from a different `kernel32.dll`, so the new one was checked with radare2, which lists the same 954 exports in the same order. **Merged by a pefile maintainer** |
+| **41** | **pefile** | `2.1k` | [#649](https://github.com/erocarrera/pefile/pull/649): brought back the commented-out checksum checks on corkami files that are in the test corpus, including the 97-byte `tinydrivXP.sys` that #635 fixed. pefile, radare2 and a separate checksum agree on all 354 files radare2 loads. **Merged by a pefile maintainer** |
 
 ### 🔄 In review
 
@@ -90,7 +92,7 @@
 | :--- | :--- |
 | <img src="https://img.shields.io/badge/Apple-000000?style=flat-square&logo=apple&logoColor=white" alt="Apple" /> **Core ML Tools** | [#2899](https://github.com/apple/coremltools/pull/2899) · [#2907](https://github.com/apple/coremltools/pull/2907): `nn.MultiheadAttention` in inference mode runs through `_native_multi_head_attention`, which had no converter, so every model built on it failed to convert to Core ML, open since 2024; and antialiased resizes (torchvision `Resize`'s default) silently dropped the filter, off by 0.116 on average, which also uncovered a Core ML runtime bug in `reduce_sum` past 65,536 elements ([#2906](https://github.com/apple/coremltools/issues/2906)) |
 | <img src="https://img.shields.io/badge/Apple-000000?style=flat-square&logo=apple&logoColor=white" alt="Apple" /> **Swift Numerics** | [#361](https://github.com/apple/swift-numerics/pull/361): `Complex.sinh` near the overflow boundary dropped the sign of `cos(y)`, so `sin(π + 40i)` came out with the wrong sign. Found by comparing the complex functions with mpmath |
-| **pefile** | [#647](https://github.com/erocarrera/pefile/pull/647) · [#649](https://github.com/erocarrera/pefile/pull/649): the last two commented-out tests brought back, the export hash and the checksum checks, with values checked against radare2. Both approved |
+| **pefile** | [#636](https://github.com/erocarrera/pefile/pull/636): in old style delay imports `phmod` was read from the `pUnloadIAT` field, a copy and paste slip from 2020, and `write()` saved that value back |
 | <img src="https://img.shields.io/badge/Prettier-1A2B34?style=flat-square&logo=prettier&logoColor=F7B93E" alt="Prettier" /> **Prettier** | [#20128](https://github.com/prettier/prettier/pull/20128): nested emphasis around a bare URL turned into strong emphasis, open since 2020 |
 | <img src="https://img.shields.io/badge/Amazon%20AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS" /> **AWS** · CLI, CDK CLI | [aws-cli#10677](https://github.com/aws/aws-cli/pull/10677) · [aws-cdk-cli#1988](https://github.com/aws/aws-cdk-cli/pull/1988): `--generate-cli-skeleton output` failed validation on its own sample data for 4,638 of 17,737 operations, open since 2017; and `cdk import` submitted the template CloudFormation mangles, so the import failed naming a resource nobody touched |
 | <img src="https://img.shields.io/badge/Elastic-005571?style=flat-square&logo=elasticsearch&logoColor=white" alt="Elastic" /> **Elasticsearch** | [#158437](https://github.com/elastic/elasticsearch/pull/158437): a malformed SQL cursor came back as a raw JVM error |
