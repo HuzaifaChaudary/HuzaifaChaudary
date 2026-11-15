@@ -35,7 +35,7 @@
 
 <img src="https://img.shields.io/badge/Merged%20upstream-41-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="41 merged" />
 <img src="https://img.shields.io/badge/Merged%20into-1.04M%20stars-0f2027?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="Merged into 1.04M stars" />
-<img src="https://img.shields.io/badge/Open%20upstream-24-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="24 open upstream" />
+<img src="https://img.shields.io/badge/Open%20upstream-37-1f6feb?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b27" alt="37 open upstream" />
 <img src="https://img.shields.io/badge/Shipped%20in%20a%20release-jest%20v30.5.1-36BCF7?style=for-the-badge&logo=jest&logoColor=white&labelColor=1a1b27" alt="Shipped in jest v30.5.1" />
 
 </div>
@@ -100,6 +100,7 @@
 | **Chart.js** | [#12292](https://github.com/chartjs/Chart.js/pull/12292) · [#12293](https://github.com/chartjs/Chart.js/pull/12293): a legend key that did not match the line it stood for, and a fractional-canvas resize regression |
 | **Netty** | [#17389](https://github.com/netty/netty/pull/17389): a form field still being decoded was in neither list `destroy()` clears, so a client that goes away mid-upload leaked the field and its slice of the inbound buffer. Vert.x installs the exact factory configuration this fires in |
 | **jadx** | [#3026](https://github.com/skylot/jadx/pull/3026): the Android decompiler silently produced wrong code for a loop exit shared with code before the loop |
+| **radare2** | [#27476](https://github.com/radareorg/radare2/pull/27476) to [#27488](https://github.com/radareorg/radare2/pull/27488): 13 fixes opened in one day. Twelve are in the assemblers and the WebAssembly disassembler (arm64, arm32, Thumb, MIPS, RISC-V, eBPF, WebAssembly, Game Boy, AVR), which wrote a different instruction than the one asked for with no error, each checked against `llvm-mc`. The thirteenth removes a heap over-read that the Windows builds hit when mounting a UFS disk image, shown with ASan |
 | **ONNX** | [#8654](https://github.com/onnx/onnx/pull/8654): the reference `ConvTranspose` crashed when an explicit `output_shape` needed padding; found by running the reference evaluator against onnxruntime |
 
 ---
